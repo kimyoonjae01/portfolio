@@ -25,8 +25,8 @@ input, button, label {cursor:pointer;}
 /* 스크롤 바 꾸미기 */
 body::-webkit-scrollbar {
     background: #333;
-    width: 10px; height: 10px;
+    width: 5px; height: 10px;
 }
 body::-webkit-scrollbar-thumb {
-    background: #ff0;
+    background: #aaa;
 }
