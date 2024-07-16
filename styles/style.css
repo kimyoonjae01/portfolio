@@ -44,7 +44,7 @@ main .txt h1 {font-family: "Luxurious Roman", serif; font-size:70px; text-transf
 /* project */
 .project {padding:50px 30px; }
 .project h1[id] {font-size:70px; text-transform: capitalize; font-family:"Montaga",serif; font-weight:400; margin-top:50px; margin: 100px 0 ;}
-.project div[class^=p_] {position:relative; background:#E5EEF8; padding:20px; border-radius:50px; display:flex; justify-content: flex-start;}
+.project div[class^=p_] {position:relative;padding:20px; border-radius:50px; display:flex; justify-content: flex-start;}
 .project div[class^=p_]:nth-child(2) .swiper-slide {background: none;} /*SNS내부*/
 .project div[class^=p_]:nth-child(4) {width:1200px; margin: 0 auto;} /*디테일*/
 .project div[class^=p_]:nth-child(6) {width:1200px; margin: 0 auto;} /*패키지*/
@@ -60,7 +60,9 @@ main .txt h1 {font-family: "Luxurious Roman", serif; font-size:70px; text-transf
 .project div[class^=p_] .info ul {margin:30px 0;}
 .project div[class^=p_] .info ul li {line-height:2; font-size:20px; text-transform: capitalize;}
 .project div[class^=p_] .info ul li em {font-weight:600;}
-.project div[class^=p_] .info ul li:last-child {margin:50px 0 0;}
+.project div[class^=p_] .info ul li:last-child {
+    margin: 0 0;
+}
 .project div[class^=p_] .info ul li a {border-bottom:2px solid #000;}
 .project div[class^=p_] img:hover {filter:brightness(105%)}
 /* sns */
