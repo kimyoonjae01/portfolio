@@ -3,21 +3,22 @@ body, html {scroll-behavior: smooth;}
 header {
     position:fixed; left:0; top:0; width:100%; z-index:999; height:100px;
     display:flex; justify-content: space-between; align-items: center;
-    background:#eee; padding:0 20px;
+    background:#fff; padding:0 20px;
 }
 header h1 {font-family: "Luxurious Roman", serif; font-size:30px; line-height:1; text-transform: capitalize;}
 header h1 span {font-family: "Luxurious Roman", serif; font-size:20px;}
 header nav {}
-header nav a {margin-right:60px; font-size:14px; font-family:"Luxurious Roman"; text-transform: capitalize;}
+header nav a{margin-right:60px; font-size:14px; font-family:"Luxurious Roman"; text-transform: capitalize;}
+header nav a em {font-family: "Luxurious Roman";}
 header nav a:last-child {margin:0;}
 header nav a:hover {text-decoration: underline;}
 /* main */
-main {height:100vh; position:relative; background:#eee;}
+main {height:100vh; position:relative; background:#fff;}
 main .txt {position:absolute; right:50px; bottom:50px; text-align:right;}
 main .txt p {font-family: "Luxurious Roman", serif; font-size:40px; line-height:0.5;}
 main .txt h1 {font-family: "Luxurious Roman", serif; font-size:70px; text-transform: capitalize;}
 /* profile */
-.profile {padding: 100px 20px 100px 20px;margin:30px;border-radius:20px;background:#eee;display:flex;justify-content: center;}
+.profile {padding: 100px 20px 100px 20px;margin:30px;border-radius:20px;background:#E5EEF8;display:flex;justify-content: center; }
 .profile .photo {width:317px; height:467px; background:#fff;}
 .profile .photo img {width:100%;}
 .profile .txt {display:flex;margin-left:47px;justify-content: space-between; width: calc(80% - 317px);}
@@ -41,12 +42,18 @@ main .txt h1 {font-family: "Luxurious Roman", serif; font-size:70px; text-transf
 .profile .right .skill dt img {width:100%;}
 .profile .right .skill dd {width:calc(100% - 100px);}
 /* project */
-.project {padding:50px 30px;}
-.project h1[id] {font-size:70px; text-transform: capitalize; font-family: "Luxurious Roman", serif; font-weight:600; margin-top:50px;}
-.project div[class^=p_] {position:relative; background:#eee; padding:20px; border-radius:50px; display:flex; justify-content: flex-start;}
+.project {padding:50px 30px; }
+.project h1[id] {font-size:70px; text-transform: capitalize; font-family:"Montaga",serif; font-weight:400; margin-top:50px; margin: 100px 0 ;}
+.project div[class^=p_] {position:relative; background:#E5EEF8; padding:20px; border-radius:50px; display:flex; justify-content: flex-start;}
+.project div[class^=p_]:nth-child(2) .swiper-slide {background: none;} /*SNS내부*/
+.project div[class^=p_]:nth-child(4) {width:1200px; margin: 0 auto;} /*디테일*/
+.project div[class^=p_]:nth-child(6) {width:1200px; margin: 0 auto;} /*패키지*/
+.project div[class^=p_]:nth-child(6) .swiper-slide  {background: none;} /*패키지내부*/
+.project div[class^=p_]:nth-child(8) {width:1200px; margin: 0 auto;} /*APP*/
+.project div[class^=p_]:nth-child(10) {width:1200px; margin: 0 auto;} /*Web*/
 .project div[class^=p_] .swiper-slide {background:#eee;/* padding:20px; */border-radius:50px;display:flex;justify-content: flex-start;}
 /* project 소개 */
-.project div[class^=p_] .thum {width:700px; height:400px; background:lightgray; margin-right:20px;}
+.project div[class^=p_] .thum {width:700px; height:400px; background:lightgray; margin-right:20px;} /*이미지 보이는곳*/
 .project div[class^=p_] .thum img {width:100%;}
 .project div[class^=p_] .info {}
 .project div[class^=p_] .info h3 {font-weight:600; font-size:30px;}
