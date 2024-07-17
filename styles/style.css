@@ -1,5 +1,7 @@
 body > * {min-width:1400px; margin:0 auto;}
+
 body, html {scroll-behavior: smooth;}
+li a {text-decoration-line: none;}
 header {
     position:fixed; left:0; top:0; width:100%; z-index:999; height:100px;
     display:flex; justify-content: space-between; align-items: center;
@@ -63,7 +65,14 @@ main .txt h1 {font-family: "Luxurious Roman", serif; font-size:70px; text-transf
 .project div[class^=p_] .info ul li:last-child {
     margin: 0 0;
 }
-.project div[class^=p_] .info ul li a {border-bottom:2px solid #000;}
+.project div[class^=p_] .info ul li a {
+    background: #555;
+    color: #fff;
+    display: block; width: 150px; text-align: center;
+    border: 1px solid black;
+    margin: 8px 0;
+    border-radius: 50px;
+}
 .project div[class^=p_] img:hover {filter:brightness(105%)}
 /* sns */
 .project .p_sns .swiper {}
