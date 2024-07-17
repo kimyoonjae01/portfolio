@@ -66,12 +66,13 @@ main .txt h1 {font-family: "Luxurious Roman", serif; font-size:70px; text-transf
     margin: 0 0;
 }
 .project div[class^=p_] .info ul li a {
-    background: #555;
+    background: #999;
     color: #fff;
     display: block; width: 150px; text-align: center;
-    border: 1px solid black;
     margin: 8px 0;
     border-radius: 50px;
+    font-size: 1rem;
+    line-height: 35px;
 }
 .project div[class^=p_] img:hover {filter:brightness(105%)}
 /* sns */
