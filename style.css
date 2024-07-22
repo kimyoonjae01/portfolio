@@ -1,0 +1,113 @@
+body > * {min-width:1400px; margin:0 auto;}
+
+body, html {scroll-behavior: smooth;}
+li a {text-decoration-line: none;}
+header {
+    position:fixed; left:0; top:0; width:100%; z-index:999; height:100px;
+    display:flex; justify-content: space-between; align-items: center;
+    background:#fff; padding:0 20px;
+}
+header h1 {font-family: "Luxurious Roman", serif; font-size:30px; line-height:1; text-transform: capitalize;}
+header h1 span {font-family: "Luxurious Roman", serif; font-size:20px;}
+header nav {}
+header nav a{margin-right:60px; font-size:14px; font-family:"Luxurious Roman"; text-transform: capitalize;}
+header nav a em {font-family: "Luxurious Roman";}
+header nav a:last-child {margin:0;}
+header nav a:hover {text-decoration: underline;}
+/* main */
+main {height:100vh; position:relative; background:#fff;}
+main .txt {position:absolute; right:50px; bottom:50px; text-align:right;}
+main .txt p {font-family: "Luxurious Roman", serif; font-size:40px; line-height:0.5;}
+main .txt h1 {font-family: "Luxurious Roman", serif; font-size:70px; text-transform: capitalize;}
+/* profile */
+.profile {padding: 100px 20px 100px 20px;margin:30px;border-radius:20px;background:#E5EEF8;display:flex;justify-content: center; }
+.profile .photo {width:317px; height:467px; background:#fff;}
+.profile .photo img {width:100%;}
+.profile .txt {display:flex;margin-left:47px;justify-content: space-between; width: calc(80% - 317px);}
+.profile .left {margin-right:50px; width:40%;}
+.profile .left h1 {font-size:30px; text-transform: uppercase;}
+.profile .left h2 {font-size:18px; font-weight:600; margin-top:50px; padding-top:30px; line-height:1.7; border-top:1px solid #222; font-weight: 400;}
+.profile .left h2 em {font-size:18px; font-weight:600;}
+.profile .left {}
+.profile .left .detail {}
+.profile .left .detail p {line-height:1.9;}
+.profile .left .detail p em {font-weight:700; letter-spacing: 2px;}
+.profile .left .detail p span {}
+.profile .right {width:60%;}
+.profile .right h2 {font-size:20px; text-transform: uppercase; font-weight: 600; margin-bottom:15px;}
+.profile .right .info {display:flex; flex-flow:row wrap;}
+.profile .right .info dt {font-weight: 700; width:200px; margin-bottom:10px;}
+.profile .right .info dd {width:calc(100% - 200px);}
+.profile .right .info dd span {font-size:14px; letter-spacing: -0.5px;}
+.profile .right .skill {display:flex; flex-flow:row wrap;}
+.profile .right .skill dt {width:32px; margin-right:58px;}
+.profile .right .skill dt img {width:100%;}
+.profile .right .skill dd {width:calc(100% - 100px);}
+/* project */
+.project {padding:50px 30px; }
+.project h1[id] {font-size:70px; text-transform: capitalize; font-family:"Montaga",serif; font-weight:400; margin-top:50px; margin: 100px 0 ;}
+.project div[class^=p_] {position:relative;padding:20px; border-radius:50px; display:flex; justify-content: flex-start;}
+.project div[class^=p_]:nth-child(2) .swiper-slide {background: none;} /*SNS내부*/
+.project div[class^=p_]:nth-child(4) {width:1200px; margin: 0 auto;} /*디테일*/
+.project div[class^=p_]:nth-child(6) {width:1200px; margin: 0 auto;} /*패키지*/
+.project div[class^=p_]:nth-child(6) .swiper-slide  {background: none;} /*패키지내부*/
+.project div[class^=p_]:nth-child(8) {width:1200px; margin: 0 auto;} /*APP*/
+.project div[class^=p_]:nth-child(10) {width:1200px; margin: 0 auto;} /*Web*/
+.project div[class^=p_] .swiper-slide {background:#eee;/* padding:20px; */border-radius:50px;display:flex;justify-content: flex-start;}
+/* project 소개 */
+.project div[class^=p_] .thum {width:700px; height:400px; background:lightgray; margin-right:20px;} /*이미지 보이는곳*/
+.project div[class^=p_] .thum img {width:100%;}
+.project div[class^=p_] .info {}
+.project div[class^=p_] .info h3 {font-weight:600; font-size:30px;}
+.project div[class^=p_] .info ul {margin:30px 0;}
+.project div[class^=p_] .info ul li {line-height:2; font-size:20px; text-transform: capitalize;}
+.project div[class^=p_] .info ul li em {font-weight:600;}
+.project div[class^=p_] .info ul li:last-child {
+    margin: 0 0;
+}
+.project div[class^=p_] .info ul li a {
+    background: #999;
+    color: #fff;
+    display: block; width: 150px; text-align: center;
+    margin: 8px 0;
+    border-radius: 50px;
+    font-size: 1rem;
+    line-height: 35px;
+}
+.project div[class^=p_] img:hover {filter:brightness(105%)}
+/* sns */
+.project .p_sns .swiper {}
+.project .p_sns .swiper .swiper-slide {display:block;}
+.project .p_sns .swiper .swiper-slide img {width:100%;}
+.project .p_detail > p {width:25px; padding-top:100px; margin-right:20px;}
+.project .p_detail .swiper {}
+.project .p_detail .swiper .swiper-slide {height:500px; overflow:hidden;}
+.project .p_detail .swiper .swiper-slide img {width:100%;}
+/*디테일*/
+/* 상세 팝업 */
+.big_bg {
+    position:fixed; left:0; top:0; z-index:999;
+    width:100%; height:100vh;
+    background:rgba(0,0,0,0.6);
+}
+.big_bg .img {
+    max-width:50vw; margin:30px auto;
+    height:90vh; overflow-y:auto; overflow-x:hidden;
+}
+.big_bg .img img {width:100%;}
+/* 스크롤바 꾸미기 */
+.big_bg .img::-webkit-scrollbar {
+    background:#333;
+    width:2px; height:10px;
+}
+.big_bg .img::-webkit-scrollbar-thumb {
+    background:#fff;
+}
+/* 배너디자인 */
+#ba {display:none;}/*숨기기*/
+#ba {padding:20px;}
+#ba .p_bnr {display:flex; flex-flow:row wrap;}
+#ba .p_bnr p {width:50%;}
+#ba .p_bnr p img {width:100%;}
+/* 마무리인사 */
+p.bye {font-size:30px; text-align: center; padding:100px 0;}
